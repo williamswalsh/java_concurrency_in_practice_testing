@@ -20,6 +20,10 @@ public class PersonSet {
         return mySet.contains(p);
     }
 
-    interface Person {
+    @Override
+    public String toString() {
+        return "PersonSet{" +
+                "mySet=" + mySet +
+                '}';
     }
 }
