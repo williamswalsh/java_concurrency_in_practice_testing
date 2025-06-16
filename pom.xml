@@ -27,6 +27,22 @@
             <version>5.11.0-M2</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
 
+<!--Used to record time using org.apache.commons.lang3.time.StopWatch-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>10.1.34</version>
+        </dependency>
+    </dependencies>
 </project>
