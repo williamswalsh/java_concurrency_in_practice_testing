@@ -3,6 +3,7 @@ package ie.williamswalsh.counters;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 
@@ -62,7 +63,7 @@ public class CounterTest {
     @Test
     void testUsingInvokeAllWithSafeCounter() throws InterruptedException {
         SafeCounter safeCounter = new SafeCounter();
-        List<Callable<Integer>> tasks = List.of(
+        List<Callable<Integer>> tasks = Arrays.asList(
                 new CountTask(safeCounter),
                 new CountTask(safeCounter),
                 new CountTask(safeCounter)
