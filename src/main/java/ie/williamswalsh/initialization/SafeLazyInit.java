@@ -1,5 +1,8 @@
-package ie.williamswalsh.lazy_init;
+package ie.williamswalsh.initialization;
 
+import net.jcip.annotations.ThreadSafe;
+
+@ThreadSafe
 public class SafeLazyInit {
     private static String resource;
 
@@ -8,9 +11,6 @@ public class SafeLazyInit {
     // 2 threads can't be in method simultaneously
     // 2nd method call will be blocked until first thread completes execution.
     public synchronized static String getResource() {
-        if (resource==null)
-            resource = "";
-
-        return resource;
+        return (resource==null)? "": resource;
     }
 }
