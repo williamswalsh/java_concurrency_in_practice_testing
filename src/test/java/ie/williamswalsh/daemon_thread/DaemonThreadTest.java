@@ -1,4 +1,4 @@
-package ie.williamswalsh.daemonThread;
+package ie.williamswalsh.daemon_thread;
 
 public class DaemonThreadTest {
 
@@ -16,7 +16,7 @@ public class DaemonThreadTest {
         };
 
         Thread daemonThread = new Thread(runnable);
-        daemonThread.setDaemon(true); // Mark this thread as daemonThread
+        daemonThread.setDaemon(true); // Mark this thread as daemon_thread
         daemonThread.start();
 
         System.out.println("Main thread finished.");
